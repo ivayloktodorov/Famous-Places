@@ -1,0 +1,77 @@
+[
+     {
+         "userID": 1,
+         "username": "username",
+         "password": "parola1",
+         "email": "email1@email.com",
+         "phone": "088",
+         "posts":
+            [
+              {
+                  "urlImage": "image",
+                  "title": "tekst",
+                  "description": "info"
+              },
+              {
+                  "urlImage": "image",
+                  "title": "tekst",
+                  "description": "info"
+              },
+              {
+                  "urlImage": "image",
+                  "title": "tekst",
+                  "description": "info"
+              }
+          ]
+     },
+     {
+         "userID": 2,
+         "username": "username",
+         "password": "parola2",
+         "email": "email2@email.com",
+         "phone": "089",
+         "posts":
+            [
+               {
+                   "urlImage": "image",
+                   "title": "tekst",
+                   "description": "info"
+               },
+               {
+                   "urlImage": "image",
+                   "title": "tekst",
+                   "description": "info"
+               },
+               {
+                   "urlImage": "image",
+                   "title": "tekst",
+                   "description": "info"
+               }
+           ]
+     },
+     {
+         "userID": 3,
+         "username": "username",
+         "password": "parola3",
+         "email": "email3@email.com",
+         "phone": "090",
+         "posts":
+            [
+               {
+                   "urlImage": "image",
+                   "title": "tekst",
+                   "description": "info"
+               },
+               {
+                   "urlImage": "image",
+                   "title": "tekst",
+                   "description": "info"
+               },
+               {
+                   "urlImage": "image",
+                   "title": "tekst",
+                   "description": "info"
+               }
+           ]
+     }
+ ]
