@@ -21,6 +21,15 @@ extension UIViewController {
         let phone: String
         let userID: Int
         let username: String
+        
+        init(username: String, password: String, userID: Int, email: String, phone: String, posts: Posts) {
+            self.username = username
+            self.password = password
+            self.userID = userID
+            self.email = email
+            self.phone = phone
+            self.posts = posts
+        }
     }
     
     
@@ -28,6 +37,12 @@ extension UIViewController {
         let urlImage: String
         let title: String
         let description: String
+        
+        init(urlImage: String, title: String, description: String) {
+            self.urlImage = urlImage
+            self.title = title
+            self.description = description
+        }
     }
     
 

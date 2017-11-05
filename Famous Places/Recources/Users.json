@@ -1,76 +1,76 @@
 [
      {
          "userID": 1,
-         "username": "username",
+         "username": "ivan",
          "password": "parola1",
-         "email": "email1@email.com",
+         "email": "ivan@email.com",
          "phone": "088",
          "posts":
             [
               {
-                  "urlImage": "image",
-                  "title": "tekst",
-                  "description": "info"
+                  "urlImage": "https://cache-graphicslib.viator.com/graphicslib/thumbs674x446/31687/SITours/dubai-city-tour-in-small-group-in-dubai-316964.jpg",
+                  "title": "Dubai",
+                  "description": "Dubai emerged as a global city and business hub of the Middle East. It is also a major transport hub for passengers and cargo. By the 1960s, Dubai's economy was based on revenues from trade and, to a smaller extent, oil exploration concessions, but oil was not discovered until 1966. Oil revenue first started to flow in 1969. Dubai's oil revenue helped accelerate the early development of the city, but its reserves are limited and production levels are low: today, less than 5% of the emirate's revenue comes from oil."
               },
               {
-                  "urlImage": "image",
-                  "title": "tekst",
-                  "description": "info"
+                  "urlImage": "http://i.dailymail.co.uk/i/pix/2016/02/05/13/30E6693900000578-3432068-image-a-15_1454679749924.jpg",
+                  "title": "NYC",
+                  "description": "The City of New York, often called New York City or simply New York, is the most populous city in the United States. With an estimated 2016 population of 8,537,673 distributed over a land area of about 302.6 square miles (784 km2), New York City is also the most densely populated major city in the United States. Located at the southern tip of the state of New York, the city is the center of the New York metropolitan area, one of the most populous urban agglomerations in the world with an estimated 23.7 million residents as of 2016."
               },
               {
-                  "urlImage": "image",
-                  "title": "tekst",
-                  "description": "info"
+                  "urlImage": "http://vremena.bg/wp-content/uploads/2016/08/katedrala-varna-Small.jpg",
+                  "title": "Varna",
+                  "description": "Varna is the third largest city in Bulgaria and the largest city and seaside resort on the Bulgarian Black Sea Coast. Situated strategically in the Gulf of Varna, the city has been a major economic, social and cultural centre for almost three millennia. Varna, historically known as Odessos, grew from a Thracian seaside settlement to a major seaport on the Black Sea."
               }
           ]
      },
      {
          "userID": 2,
-         "username": "username",
+         "username": "petar",
          "password": "parola2",
-         "email": "email2@email.com",
+         "email": "petar@email.com",
          "phone": "089",
          "posts":
             [
                {
-                   "urlImage": "image",
-                   "title": "tekst",
-                   "description": "info"
+                   "urlImage": "https://assets.nerdwallet.com/blog/wp-content/uploads/2015/04/qa-small-business-is-big-business-in-miami-chamber-chief-says-story.jpg",
+                   "title": "Miami",
+                   "description": "Miami is a major center, and a leader in finance, commerce, culture, media, entertainment, the arts, and international trade. In 2012, Miami was classified as an Alpha−World City in the World Cities Study Group's inventory. In 2010, Miami ranked seventh in the United States and 33rd among global cities in terms of business activity, human capital, information exchange, cultural experience, and political engagement. In 2008, Forbes magazine ranked Miami America's Cleanest City, for its year-round good air quality, vast green spaces, clean drinking water, clean streets, and citywide recycling programs."
                },
                {
-                   "urlImage": "image",
-                   "title": "tekst",
-                   "description": "info"
+                   "urlImage": "http://www.takeusanywhere.com/wp-content/uploads/2016/05/IMG_0928.jpg",
+                   "title": "Sofia",
+                   "description": "Sofia is the capital and largest city of Bulgaria. 1.26 million people live in the city and 1.68 million people live in its metropolitan area. The city is at the foot of Vitosha Mountain in the western part of the country. Being in the centre of the Balkan peninsula, it is midway between the Black Sea and the Adriatic Sea, and closest to the Aegean Sea."
                },
                {
-                   "urlImage": "image",
-                   "title": "tekst",
-                   "description": "info"
+                   "urlImage": "https://www.londontoolkit.com/Images/windsor_castle.jpg",
+                   "title": "London",
+             "description": "London is the capital and most populous city of England and the United Kingdom. Standing on the River Thames  the south east of the island of Great Britain, London has been a major settlement two millennia. It was founded by the Romans, who named it Londinium. London's ancient core, the City of London, largely retains its 1.12-square-mile (2.9 km2) medieval boundaries."
                }
            ]
      },
      {
          "userID": 3,
-         "username": "username",
+         "username": "kiril",
          "password": "parola3",
-         "email": "email3@email.com",
+         "email": "kiril@email.com",
          "phone": "090",
          "posts":
             [
                {
-                   "urlImage": "image",
-                   "title": "tekst",
-                   "description": "info"
+                   "urlImage": "http://www.bunniktours.com.au/var/plain_site/storage/images/media/images/st-basil-s-cathedral-moscow/80544-1-eng-AU/St-Basil-s-Cathedral-Moscow_reference.jpg",
+                   "title": "Moscow",
+             "description": "Moscow is the capital and most populous city of Russia, with 13.2 million residents within the city limits and 17.1 million within the urban area. Moscow has the status of a Russian federal city. Moscow is a major political, economic, cultural, and scientific centre of Russia and Eastern Europe, as well as the largest city entirely on the European continent."
                },
                {
-                   "urlImage": "image",
-                   "title": "tekst",
-                   "description": "info"
+                   "urlImage": "http://nozinblog.com/wp-content/uploads/2012/09/las-vegas-small.jpg",
+                   "title": "Las Vegas",
+                   "description": "Las Vegas officially the City of Las Vegas and often known simply as Vegas, is the 28th-most populated city in the United States, the most populated city in the state of Nevada, and the county seat of Clark County. The city anchors the Las Vegas Valley metropolitan area and is the largest city within the greater Mojave Desert.[6] Las Vegas is an internationally renowned major resort city, known primarily for its gambling, shopping, fine dining, entertainment, and nightlife. The Las Vegas Valley as a whole serves as the leading financial, commercial, and cultural center for Nevada."
                },
                {
-                   "urlImage": "image",
-                   "title": "tekst",
-                   "description": "info"
+                   "urlImage": "https://thumbnails.trvl-media.com/7eAnNGPsBTI5gT5SLDCFpTSD1uk=/a.travel-assets.com/mediavault.le/media/8f05fb9bd314ac9f1ca97d032c9d976996a0ab5e.jpeg",
+                   "title": "Paris",
+                   "description": "Paris is the capital and most populous city of France, with an administrative-limits area of 105 square kilometres (41 square miles) and a 2015 population of 2,229,621. The city is a commune and department, and the capital-heart of the 12,012-square-kilometre (4,638-square-mile) Île-de-France region (colloquially known as the 'Paris Region'), whose 12,142,802 2016 population represents roughly 18 percent of the population of France."
                }
            ]
      }

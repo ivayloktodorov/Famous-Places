@@ -15,18 +15,16 @@ class LogInVC: UIViewController {
     
     let isUserLoggedIn = UserDefaults.standard
     var allUsersArray: Users = []
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         readJSON()
-    
-        
     }
     
     
     override func viewDidAppear(_ animated: Bool) {
         if isUserLoggedIn.bool(forKey: "isUserLoggedIn") {
-            changeVC()
+        changeVC()
         }
     }
     
@@ -69,6 +67,7 @@ class LogInVC: UIViewController {
         myPlacesVC.allUsersArray = allUsersArray
         self.present(myPlacesVC, animated: true, completion: nil)
     }
+    
     func readJSON() {
         guard let file = Bundle.main.url(forResource: "Users", withExtension: "json") else {
             print("no file")
@@ -87,7 +86,7 @@ class LogInVC: UIViewController {
     }
     
     func isUsernameValid(_ username : String) -> Bool {
-        let RegEx = "\\A\\w{7,18}\\z"
+        let RegEx = "\\A\\w{1,18}\\z"
 //        let RegEx = "/[a-zA-Z]+/g"
         let predicate = NSPredicate(format:"SELF MATCHES %@", RegEx)
         return predicate.evaluate(with: username)
@@ -99,16 +98,6 @@ class LogInVC: UIViewController {
         return predicate.evaluate(with: password)
     }
     
-    //    func datata() {
-    //        var URLString = ""
-    //        guard var url = URL(string: URLString) else {
-    //            return
-    //        }
-    
-    //        URLSession.shared.dataTask(with: url) { (data, responce, error) in
-    //            }
-    //            .resume()
-    //    }
     
     
     override func didReceiveMemoryWarning() {

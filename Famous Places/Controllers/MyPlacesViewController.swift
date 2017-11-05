@@ -11,41 +11,45 @@ import UIKit
 class MyPlacesViewController: UITableViewController {
     
     let isUserLoggedIn = UserDefaults.standard
-    let myPosts = ["Post1", "Post2", "Post3"]
+    var myPosts: NSArray = []
     var allUsersArray: Users = []
-   
+    var myUser = ""
+    var myTitlePosts = ["test"]
+    var myDescript = ["test"]
+    var myImages = ["test"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        let activeUser = isUserLoggedIn.string(forKey: "ActiveUserUsername")
-////        let activePass = isUserLoggedIn.object(forKey:"ActiveUserPassword") as! String!
-//print(activeUser)
-
+        myTitlePosts = []
+        myDescript = []
+        myImages = []
+        activeUserFunc()
     }
     
-    
-//    func activeUser() {
-//        guard let username = self.activeUser else {
-//            return
-//        }
-//        guard let password = self.activePass else {
-//            return
-//        }
-//        for user in allUsersArray {
-//            if user.username == username && user.password == password {
-
-//
-//                break
-//            }
-//        }
-//    }
+    func activeUserFunc() {
+        let activeUserStr = isUserLoggedIn.string(forKey: "ActiveUserUsername")!
+        let activePassStr = isUserLoggedIn.string(forKey: "ActiveUserPassword")!
+        for user in allUsersArray {
+            if user.username == activeUserStr && user.password == activePassStr {
+                myPosts = (user.posts as NSArray)
+                myUser = user.username
+               
+                for i in user.posts {
+                    myTitlePosts.append(i.title)
+                    myDescript.append(i.description)
+                    myImages.append(i.urlImage)
+                }
+                break
+            }
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
 
-    
+
     
     // MARK: - Table view data source
 
@@ -56,34 +60,39 @@ class MyPlacesViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomCell
-        
-        let posts = myPosts[indexPath.row]
-        cell.customCellUsername.text = posts
-        cell.customCellPost.text = posts
-//        cell.customCellImage.image = posts
-//        cell.customCellUserImage.image =
-
+        cell.customCellUsername.text = myUser
+        cell.customCellPost.text = myTitlePosts[indexPath.row]
+        let imgURL = myImages[indexPath.row]
+        cell.customCellImage.setImageFromURl(stringImageUrl: imgURL)
         return cell
     }
     
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
-        
+       
+//        if let postDictionary = myPosts[indexPath.row] as? [String:String] {
+//            print(postDictionary)
+//        }
+//        if let testPostDict = myPosts[indexPath.row] as! Dictionary <String, String> {
+//            print(testPostDict)
+//        }
+//        let thisPost = currentPost as! Dictionary [String: Any]
+//        let currentPost = myPosts[indexPath.row]
         
         let stroyBoard = UIStoryboard(name:"Main", bundle: nil)
         let detailVC = stroyBoard.instantiateViewController(withIdentifier: "detailVC") as! DetailViewController
-//        detailVC.desctiptionLabel.text =
-//        detailVC.descriptionTextView.text =
-//        detailVC.detailsImage.image =
+        detailVC.descrLabel = myTitlePosts[indexPath.row]
+        detailVC.descrTextView = myDescript[indexPath.row]
+        detailVC.imageLink = myImages[indexPath.row]
         self.present(detailVC, animated: true, completion: nil)
     }
     
-
     
     func logOut() {
         isUserLoggedIn.removeObject(forKey: "isUserLoggedIn")
-        isUserLoggedIn.removeObject(forKey: "ActiveUser")
+        isUserLoggedIn.removeObject(forKey: "ActiveUserUsername")
+        isUserLoggedIn.removeObject(forKey: "ActiveUserPassword")
         isUserLoggedIn.synchronize()
         let stroyBoard = UIStoryboard(name:"Main", bundle: nil)
         let myPlacesVC = stroyBoard.instantiateViewController(withIdentifier: "myPlacesVC") as! MyPlacesViewController
